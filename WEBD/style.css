@@ -1,0 +1,161 @@
+/* General Body Styles */
+body {
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #91E3BC;
+    color: #333;
+    line-height: 1.6;
+}
+/* Header and Navigation */
+header {
+    background-color: #fff;
+    box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+    padding: 1rem 5%;
+    position: sticky;
+    top: 0;
+    z-index: 100;
+}
+
+nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+nav .logo {
+    font-size: 1.5rem;
+    font-weight: bold;
+    color: #357029;
+}
+
+nav ul {
+    list-style: none;
+    display: flex;
+    margin: 0;
+    padding: 0;
+}
+
+nav ul li {
+    margin-left: 2rem;
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: #92d4a1;
+    font-weight: 800;
+    transition: color 0.3s ease;
+}
+
+nav ul li a:hover {
+    color: #007bff;
+}
+
+/* Main Content Sections */
+main {
+    padding: 2rem 5%;
+}
+
+section {
+    padding: 4rem 0;
+    border-bottom: 1px solid #ddd;
+}
+
+section:last-of-type {
+    border-bottom: none;
+}
+
+h1, h2 {
+    text-align: center;
+    margin-bottom: 2rem;
+    color: #333;
+}
+
+h1 {
+    font-size: 3rem;
+    color: rgb(255, 255, 255);
+}
+
+h2 {
+    font-size: 2.2rem;
+    color: rgb(255, 255, 255);
+}
+/* Hero Section */
+#hero {
+    text-align: center;
+    min-height: 250px;
+}
+
+.intro-text {
+    font-size: 1.5rem;
+    color: #555;
+}
+
+#typing-effect {
+    font-weight: bold;
+    color: #007bff;
+}
+
+/* Projects Section */
+.project-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 2rem;
+}
+
+.project-card {
+    background: #fff;
+    padding: 2rem;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.project-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 8px 16px rgba(0,0,0,0.15);
+}
+
+.project-card h3 {
+    margin-top: 0;
+}
+
+/* Buttons and Links */
+.btn {
+    display: inline-block;
+    background-color: #357029;
+    color: #fff;
+    padding: 0.75rem 1.5rem;
+    text-decoration: none;
+    border-radius: 5px;
+    font-weight: bold;
+    margin-top: 1rem;
+    transition: background-color 0.3s ease;
+}
+
+.btn:hover {
+    background-color: #46a732;
+}
+
+/* Contact Section */
+#contact {
+    text-align: center;
+}
+
+.email-link {
+    font-size: 1.2rem;
+    color: #357029;
+    text-decoration: none;
+}
+
+.email-link:hover {
+    text-decoration: underline;
+}
+
+/* Footer */
+footer {
+    text-align: center;
+    padding: 2rem 0;
+    background-color: #3d8330;
+    color: #fff;
+}
